@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import logo from '../../assets/atom-logotype-full-white.svg'
+import img from '../../assets/atom-app-icon-mid.svg'
 
 interface LoginFormProps {
     // Add any props here if needed
@@ -15,41 +17,46 @@ const LoginForm: React.FC<LoginFormProps> = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-black">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-[#151817]">
+            <div>
+                <img src={logo} alt="" />
+            </div>
             <div className="w-full max-w-xs">
-                <form className="bg-gray-900 shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleLogin}>
+                <form className="shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full" onSubmit={handleLogin}>
+                    <h2 className="text-white text-5xl font-bold mb-6 text-center">Login</h2>
                     <div className="mb-4">
-                        <label className="block text-white text-sm font-bold mb-2" htmlFor="email">
-                            Email
-                        </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
-                            id="email" 
-                            type="email" 
+                        <input
+                            className="appearance-none rounded relative block w-full px-3 py-2 bg-[#282828] placeholder-[#5E5E5E] text-[#5E5E5E]  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                            type="email"
                             placeholder="Email"
-                            onChange={(e) => setEmail(e.target.value)}
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
                         />
                     </div>
                     <div className="mb-6">
-                        <label className="block text-white text-sm font-bold mb-2" htmlFor="password">
-                            Password
-                        </label>
-                        <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
-                            id="password" 
-                            type="password" 
-                            placeholder="******************"
-                            onChange={(e) => setPassword(e.target.value)}
+                        <input
+                            className="appearance-none rounded relative block w-full px-3 py-2 bg-[#282828] placeholder-[#5E5E5E] text-[#5E5E5E] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={e => setPassword(e.target.value)}
                         />
-                        <p className="text-red-500 text-xs italic">Please choose a password.</p>
                     </div>
-                    <div className="flex items-center justify-between">
-                        <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    <div className="flex items-center justify-center w-full">
+                        <a href="#" className="font-medium text-sm text-[#ECE203]">Forgot password?</a>
+                    </div>
+                    <div className="mt-6">
+                        <button
+                            type="submit"
+                            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-black bg-[#EDE300] hover:[#A29B00] focus:outline-none focus:border-none focus:bg-[#fff455]"
+                        >
                             Login
                         </button>
-                        <a className="inline-block align-baseline font-bold text-sm text-white hover:text-gray-200" href="#">
-                            Forgot Password?
-                        </a>
                     </div>
                 </form>
+            </div>
+            <div>
+                <img src={img} alt="" />
             </div>
         </div>
     );

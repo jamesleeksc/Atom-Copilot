@@ -20,9 +20,9 @@ fn main() {
             let monitor = main_window.primary_monitor().unwrap();
             if let Some(monitor) = monitor {
                 let screen_size = monitor.size();
-                let width = screen_size.width * 3 / 10;
+                let width = screen_size.width * 2 / 10;
                 let height = screen_size.height * 95 / 100;
-                let new_position = PhysicalPosition::new(screen_size.width - width, 0);
+                let new_position = PhysicalPosition::new(screen_size.width - width, (screen_size.height - height)/2);
                 main_window
                     .set_size(Size::Physical(PhysicalSize {
                         width: width,
