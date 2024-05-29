@@ -1,4 +1,8 @@
-# Atom Copilot Application
+## License
+
+Distributed under the terms of the [private license](LICENSE).
+
+# Atom Copilot Application - Rust
 
 This application was generated using Rust and Tauri 2.0.0 framework, you can find documentation and help at
 [`Tauri`](https://tauri.app/), [`Rust`](https://www.rust-lang.org/)
