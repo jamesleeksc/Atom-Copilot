@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./atom-logo.svg" />
+    <link rel="stylesheet" href="./src/App.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atom-Copilot</title>
+  </head>
+
+  <body >
+    <div data-tauri-drag-region class="titlebar">
+  <div class="titlebar-button" id="titlebar-minimize">
+    
+  </div>
+  <div class="titlebar-button" id="titlebar-maximize">
+  
+  </div>
+  <div class="titlebar-button" id="titlebar-close">
+    
+  </div>
+</div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+<script>
+  // import {appWindow } from '@tauri-apps/api/window'
+  document
+  .getElementById('titlebar-minimize')
+  .addEventListener('click', () => appWindow.minimize())
+document
+  .getElementById('titlebar-maximize')
+  .addEventListener('click', () => appWindow.toggleMaximize())
+document
+  .getElementById('titlebar-close')
+  .addEventListener('click', () => appWindow.close())
+</script>
