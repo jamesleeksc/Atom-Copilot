@@ -1,0 +1,7 @@
+Atom LICENSE
+
+  Copyright (C) 2024 Atom. All rights reserved.
+
+  Atom hereby prohibits any individual or entity who get access to the software from using, copying, modifying, or distributing the software, or portions thereof, for any purpose, without the express written consent of Atom.
+
+  Any violation to this license will be prosecuted and reported to the appropriate law enforcement authorities.
