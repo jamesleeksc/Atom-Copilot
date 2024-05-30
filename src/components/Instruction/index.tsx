@@ -32,7 +32,7 @@ const Instruction: React.FC = () => {
         <div className="flex justify-center">
           <img src={Title} alt="ATOM" width={"35%"} />
         </div>
-        <h3 className="text-white text-center text-md">
+        <h3 className="text-center text-white text-md">
           What can Atom Copilot do
         </h3>
       </div>
@@ -45,11 +45,11 @@ const Instruction: React.FC = () => {
       ))}
       <div className="w-full">
         <div
-          className="pl-8 pr-8 text-pretty text-white text-md "
-          style={{ marginBottom: "26%" }}
+          className="pl-8 pr-8 text-white text-pretty text-md "
+          style={{ marginBottom: "16vh" }}
         >
           If you wish to provide feedback or need any help please{" "}
-          <span className="text-yellow-500 introCard-font cursor-pointer">
+          <span className="text-yellow-500 cursor-pointer introCard-font">
             click here
           </span>{" "}
           to send us an email.
