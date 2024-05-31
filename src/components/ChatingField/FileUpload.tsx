@@ -1,28 +1,32 @@
 import React from "react";
-import logo from "../../assets/atom-logo.svg";
-import folder from "../../assets/folder.svg";
+import logo from "/public/atom-logo.svg";
+import folder from "/public/folder.svg";
 
 export type FileUploadprops = {
   title: string;
   filetype: string;
-  cotent: string;
+  description: string;
 };
 const FileUpload: React.FC<FileUploadprops> = ({
   title,
   filetype,
-  content,
+<<<<<<< HEAD
+  // content,
+=======
+  description,
+>>>>>>> 0e0eb44f390f6d040f8c3fe28401f360a49679a0
 }: FileUploadprops) => {
   return (
     <>
-      <div className="w-full title flex justify-start items-start items-center border  border-gray-400 mb-4 mt-4">
+      <div className="flex items-start items-center justify-start w-full mt-4 mb-4 border border-gray-400 title">
         <img
           src={folder}
           alt="user"
           style={{ width: "17%" }}
-          className="border input_back p-4"
+          className="p-4 border input_back"
         />
         <div
-          className="pl-3 text-md  align-middle text-wrap"
+          className="pl-3 align-middle text-md text-wrap"
           style={{ width: "96%" }}
         >
           <span className="text-white">{title}</span>
@@ -30,7 +34,7 @@ const FileUpload: React.FC<FileUploadprops> = ({
           <span className="text-slate-50 ">{filetype}</span>
         </div>
       </div>
-      <div className="w-full title flex justify-start items-start ">
+      <div className="flex items-start justify-start w-full title ">
         <img
           src={logo}
           alt="user"
@@ -38,10 +42,14 @@ const FileUpload: React.FC<FileUploadprops> = ({
           className="border rounded-xl"
         />
         <div
-          className="pl-3 text-white text-md  align-top text-wrap"
+          className="pl-3 text-white align-top text-md text-wrap"
           style={{ width: "96%" }}
         >
-          {content}
+<<<<<<< HEAD
+          {/* {content} */}
+=======
+          {description}
+>>>>>>> 0e0eb44f390f6d040f8c3fe28401f360a49679a0
         </div>
       </div>
     </>
