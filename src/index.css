@@ -40,6 +40,7 @@ body {
     outline: none;
     border: 2px solid lightblue;
     border-right: none !important;
+    color: #00000000;
 }
 
 .ring {
