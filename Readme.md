@@ -15,16 +15,16 @@ This Desktop application is help chatting with team members and ask at the ChatG
 
 ```bash
 # step1:
-git clone https://pandaKTOP@bitbucket.org/groflaw/atom-rust.git
+git clone https://github.com/kindlyman343423/Atom-Copilot
 
 # step2:
-cd atom-rust
+cd Atom-Copilot
 
-# step3: install deps
-yarn
+# step3: install module
+npm install
 
 # step4:
-yarn run tauri dev
+npm run tauri dev
 
 ```
 
