@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../../assets/atom-logo.svg";
-import folder from "../../assets/folder.svg";
+import logo from "/public/atom-logo.svg";
+import folder from "/public/folder.svg";
 
 export type FileUploadprops = {
   title: string;
@@ -10,7 +10,7 @@ export type FileUploadprops = {
 const FileUpload: React.FC<FileUploadprops> = ({
   title,
   filetype,
-  content,
+  // content,
 }: FileUploadprops) => {
   return (
     <>
@@ -41,7 +41,7 @@ const FileUpload: React.FC<FileUploadprops> = ({
           className="pl-3 text-white text-md  align-top text-wrap"
           style={{ width: "96%" }}
         >
-          {content}
+          {/* {content} */}
         </div>
       </div>
     </>
