@@ -18,7 +18,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_20_281"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_20_281" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear_20_281" x1="133" y1="0" x2="133" y2="266" gradientUnits="userSpaceOnUse">
+<!-- <linearGradient id="paint0_linear_20_281" x1="133" y1="0" x2="133" y2="266" gradientUnits="userSpaceOnUse">
 <stop stop-color="#232323"/>
 <stop offset="0.486937" stop-color="#232323"/>
 <stop offset="1" stop-color="#0E0E0E"/>
@@ -27,6 +27,6 @@
 <stop stop-color="#232323"/>
 <stop offset="0.486937" stop-color="#232323"/>
 <stop offset="1" stop-color="#0E0E0E"/>
-</linearGradient>
+</linearGradient> -->
 </defs>
 </svg>
