@@ -1,12 +1,6 @@
 import React from "react";
-<<<<<<< HEAD
 import send from "/public/send.svg";
 import upload from "/public/document-upload.svg";
-=======
-import send from "../../assets/send.svg";
-import upload from "../../assets/document-upload.svg";
-
->>>>>>> 0e0eb44f390f6d040f8c3fe28401f360a49679a0
 const InputField: React.FC = () => {
   return (
     <>

@@ -10,11 +10,7 @@ export type FileUploadprops = {
 const FileUpload: React.FC<FileUploadprops> = ({
   title,
   filetype,
-<<<<<<< HEAD
-  // content,
-=======
   description,
->>>>>>> 0e0eb44f390f6d040f8c3fe28401f360a49679a0
 }: FileUploadprops) => {
   return (
     <>
@@ -45,11 +41,7 @@ const FileUpload: React.FC<FileUploadprops> = ({
           className="pl-3 text-white align-top text-md text-wrap"
           style={{ width: "96%" }}
         >
-<<<<<<< HEAD
-          {/* {content} */}
-=======
           {description}
->>>>>>> 0e0eb44f390f6d040f8c3fe28401f360a49679a0
         </div>
       </div>
     </>

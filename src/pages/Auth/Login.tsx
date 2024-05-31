@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Input } from 'antd';
 import logo from '/public/atom-logotype-full-white.svg'
 import img from '/public/atom-app-icon-mid.svg'
 import main from '/public/login-main.png'
@@ -36,9 +37,9 @@ const LoginForm: React.FC<LoginFormProps> = () => {
                         />
                     </div>
                     <div>
-                        <input
-                            className="appearance-none rounded relative block w-full  px-3 py-2 bg-[#282828] placeholder-[#5E5E5E] text-[#5E5E5E] focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                            type="password"
+                        <Input.Password
+                            className="border-none rounded w-full  px-3 py-2 bg-[#282828] text-[#5E5E5E] sm:text-sm"
+                            type='password'
                             placeholder="Password"
                             value={password}
                             onChange={e => setPassword(e.target.value)}
