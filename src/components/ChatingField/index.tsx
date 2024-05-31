@@ -2,9 +2,10 @@ import React from "react";
 
 import NormalChat from "./NormalChat";
 import FileUpload from "./FileUpload";
-const Chats = [
+
+export const Chats: Array<any> = [
   {
-    type: 0,
+    type: true,
     questions: "How can AI assit me doing my day to day work as account?",
     answers: {
       preface:
@@ -29,10 +30,10 @@ const Chats = [
     },
   },
   {
-    type: 1,
+    type: false,
     title: "Project Phoenix",
     filetype: "docx",
-    content:
+    description:
       "Project Phoenix -Social Media Engagement After Brand Controversies This resarch file exploeres how brands can rebuild social media engagement following a public controversy",
   },
 ];
@@ -41,9 +42,9 @@ const ChatingField: React.FC = () => {
   return (
     <div className="flex justify-center">
       <div style={{ width: "90%" }} className="justify-center">
-        {Chats.map((chat, item) => (
+        {Chats.map((chat: any, item) => (
           <div key={`chat${item}`}>
-            {chat.type == 0 ? (
+            {chat.type == true ? (
               <NormalChat
                 question={chat.questions}
                 preface={chat.answers.preface}
@@ -53,7 +54,7 @@ const ChatingField: React.FC = () => {
               <FileUpload
                 title={chat.title}
                 filetype={chat.filetype}
-                content={chat.content}
+                description={chat.description}
               ></FileUpload>
             )}
           </div>

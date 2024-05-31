@@ -1,21 +1,27 @@
 import React from "react";
+<<<<<<< HEAD
 import send from "/public/send.svg";
 import upload from "/public/document-upload.svg";
+=======
+import send from "../../assets/send.svg";
+import upload from "../../assets/document-upload.svg";
+
+>>>>>>> 0e0eb44f390f6d040f8c3fe28401f360a49679a0
 const InputField: React.FC = () => {
   return (
     <>
-      <div className="w-full pl-8 pr-8 pt-4">
-        <div className="flex  justify-between flex-row input_question input_back rounded-xl">
+      <div className="w-full pt-4 pl-8 pr-8">
+        <div className="flex flex-row justify-between input_question input_back rounded-xl">
           <input
             type="text"
-            className="text-white pl-4  pr-4 text-xl pt-2 pb-2  rounded-xl size-full h-9 outline-none input_back"
+            className="pt-2 pb-2 pl-4 pr-4 text-xl text-white outline-none rounded-xl size-full h-9 input_back"
           />
           <img src={send} className="mr-2 cursor-pointer" alt="send button" />
         </div>
       </div>
-      <div className=" mt-4 flex  justify-center ">
-        <div className="input_back flex  justify-center w-1/3 rounded-xl pl-3 pr-3">
-          <div className="bg-yellow-500 flex  justify-center w-2/4 rounded-xl pl-3 pr-3 pt-1 pb-1">
+      <div className="flex justify-center mt-4 ">
+        <div className="flex justify-center w-1/3 pl-3 pr-3 input_back rounded-xl">
+          <div className="flex justify-center w-2/4 pt-1 pb-1 pl-3 pr-3 bg-yellow-500 rounded-xl">
             <img src={upload} className="rounded cursor-pointer"></img>
           </div>
         </div>
