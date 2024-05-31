@@ -1,6 +1,6 @@
 import React from "react";
 
-import CredLogo from "../../assets/atom-logo.svg";
+import CredLogo from "/public/atom-logo.svg";
 
 const LazyLoad: React.FC = () => {
   return (

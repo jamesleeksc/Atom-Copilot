@@ -1,9 +1,9 @@
 import React from "react";
-import user from "../../assets/user.svg";
-import logo from "../../assets/atom-logo.svg";
-import clipboard from "../../assets/clipboard.svg";
-import refresh from "../../assets/refresh-circle.3.svg";
-import bookmark from "../../assets/bookmark.svg";
+import user from "/public/user.svg";
+import logo from "/public/atom-logo.svg";
+import clipboard from "/public/clipboard.svg";
+import refresh from "/public/refresh-circle.3.svg";
+import bookmark from "/public/bookmark.svg";
 export type NormalChatprops = {
   question: string;
   preface: string;

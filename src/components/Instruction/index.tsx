@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../../assets/atom-logotype-full-color.svg";
+import Title from "/public/atom-logotype-full-color.svg";
 
 import IntroCard from "./IntroCard";
 
