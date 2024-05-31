@@ -14,7 +14,7 @@ const FileUpload: React.FC<FileUploadprops> = ({
 }: FileUploadprops) => {
   return (
     <>
-      <div className="flex items-start items-center justify-start w-full mt-4 mb-4 border border-gray-400 title">
+      <div className="flex items-center justify-start w-full mt-4 mb-4 border border-gray-400 title">
         <img
           src={folder}
           alt="user"
