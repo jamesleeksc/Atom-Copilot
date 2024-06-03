@@ -14,16 +14,6 @@ Atom Copilot is a modern desktop application built using React for the frontend,
 
 Before getting started, ensure you have the following installed:
 
-- Node.js (with npm or yarn)
-- Rust (for Tauri)
-- Tauri CLI
-
-## Quick Start
-
-### Setup Frontend
-
-1. **Create a New Project**: Use Vite to scaffold a new project. If you haven't installed Vite, you can do so using npm:
-
     ```bash
     npm init vite@latest
     ```
